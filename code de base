@@ -1,0 +1,57 @@
+from constantes import MODE_GRAPHIQUE, NB_COLONNES, NB_LIGNES, ALIGNEMENT
+from mode_graphique import affiche_grille_fenetre, affiche_gagnant_fenetre, affiche_aucun_gagnant_fenetre, affiche_joueur_fenetre
+import math
+
+
+#AFFICHAGE DE LA GRILLE ET DES JETONS DANS LA CONSOLE
+
+def affiche_grille_console(positions):
+    """Affiche la grille dans la console"""
+    i = NB_COLONNES*(NB_LIGNES-1)
+    while i >= 0:
+        print(positions[i:i+NB_COLONNES])
+        i = i - NB_COLONNES
+    print()
+    
+    
+# AFFICHAGE DES MESSAGES DANS LA CONSOLE
+
+def affiche_joueur_qui_commence_console(couleur):
+    """Affichage du joueur qui commence dans la console"""
+    if couleur == 'yellow':
+        print('Les jaunes commencent')
+    elif couleur == 'red':
+        print('Les rouges commencent')
+        
+      
+  
+def affiche_joueur_console(couleur):
+    """Affichage du joueur dans la console"""
+    if couleur == 'yellow':
+        print('Les jaunes jouent')
+    elif couleur == 'red':
+        print('Les rouges jouent')
+        
+     
+     
+  def affiche_gagnant_console(couleur):
+    """Affichage du gagnant dans la console"""
+    if couleur == 'yellow':
+        print('Les jaunes gagnent', end='')
+    elif couleur == 'red':
+        print('Les rouges gagnent', end='')
+
+
+def affiche_aucun_gagnant_console():
+    """Affichage aucun gagnant dans la console"""
+    print('Aucun gagnant')
+
+
+
+def affiche_victoires_console(victoires):
+    """Affichage du nombre de victoires dans la console"""
+    [jaunes, rouges, nulles] = victoires
+    print('Jaunes : ' + str(jaunes))  # Victoires jaunes
+    print('Rouges : ' + str(rouges))  # Victoires rouges
+    print('Nulles : ' + str(nulles))  # Parties nulles
+    print()
