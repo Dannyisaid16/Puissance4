@@ -1,0 +1,25 @@
+le 15/04/2022 :
+J'AI CREER LES CONSTANTES QUE J'AVAIS BESOIN TELS QUE / 
+NB_PARTIES,IA_JAUNE ,IA_ROUGE
+
+POUR LE  CHOIX DE L'AFFICHAGE
+MODE_GRAPHIQUE = True  
+TEMPS_CHUTE = 0.1  
+LARGEUR_GRILLE = 480  
+ESPACEMENT = LARGEUR_GRILLE / 64  
+
+PUIS LES  CONTRAINTES DU JEU/
+NB_COLONNES = 7   
+NB_LIGNES = 6 
+ALIGNEMENT = 4  
+
+LE 16/04/2022 /
+
+J'AI CREER LES FONCTIONS TELS QUE :
+def affiche_grille_console(positions):
+def affiche_joueur_qui_commence_console(couleur):
+def affiche_joueur_console(couleur):
+def affiche_gagnant_console(couleur):
+def affiche_aucun_gagnant_console():
+def affiche_victoires_console(victoires): 
+
